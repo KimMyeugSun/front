@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8ff;
+  padding: 20px;
+}
+
+#book {
+  background-color: rgb(240, 192, 240);
+  width: 80vw; height: 90vh;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#write-zone {
+    width: 80%;
+}
+
+#write-zone h1 {
+  color: #99004d;
+  margin-bottom: 20px;
+}
+
+#diaryForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#diaryInput {
+  resize: vertical;
+  min-height: 150px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  align-self: flex-end;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #cc3366;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#index-box {
+    width: 20%;    
+    background-color: #fff9c4;
+    border-radius: 15px;
+    padding: 10px;
+    height: auto;
+}
+
+#index-box h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #665600;
+}
+
+.date-group {
+  margin-bottom: 20px;
+}
+
+.date-group h3 {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 5px;
+  border-bottom: 1px dashed #aaa;
+}
+
+.postit {
+  background-color: #ffeb3b;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+  margin-bottom: 5px;
+}
+
+.postit:hover {
+  transform: rotate(-1deg) scale(1.03);
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 9999;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+#modalClose {
+  position: absolute;
+  top: 10px; right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+}

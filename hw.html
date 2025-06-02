@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>오늘의 일기</title>
+  <link rel="stylesheet" href="./hw.css" />
+  <script defer src="./hw.js"></script>
+</head>
+<body>
+
+  <div id="book">
+    <!-- 왼쪽: 작성 영역 -->
+    <div id="write-zone">
+      <h1>오늘의 일기</h1>
+      <form id="diaryForm">
+        <textarea id="diaryInput" placeholder="오늘 있었던 일을 작성하세요" required></textarea>
+        <button type="submit">저장</button>
+      </form>
+    </div>
+
+    <!-- 오른쪽: 날짜별 인덱스 -->
+    <div id="index-box">
+      <div id="postit-wrapper"></div>
+    </div>
+  </div>
+
+  <!-- 모달 -->
+  <div id="diaryModal" class="modal hidden">
+    <div class="modal-content">
+      <button id="modalClose">&times;</button>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+</body>
+</html>
